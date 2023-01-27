@@ -7,12 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container-image {
-    background-image: url("https://wallpapercave.com/wp/wp11874166.jpg");
-}
+
 
 body {
-    background-image: url("https://github.com/Alexxmfs/The-Last-of-Us-lading-page/blob/master/src/assets/background_colors.png?raw=true");
+    background-image: url("");
     background-size: cover;
 }
 
