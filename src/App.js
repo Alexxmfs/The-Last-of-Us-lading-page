@@ -4,7 +4,7 @@ import "./Styles/main.css";
 
 function App() {
   return (
-    <div>
+    <div className='container-image'>
       <Navbar />
     </div>
   );
