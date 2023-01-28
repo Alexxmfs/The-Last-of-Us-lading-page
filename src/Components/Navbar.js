@@ -18,9 +18,8 @@ const Navbar = () => {
         </div>
         <nav ref={navRef}>
             <a href="/#">Home</a>
-            <a href="/#">My work</a>
-            <a href="/#">Blog</a>
-            <a href="/#">About me</a>
+            <a href="/#">Personagens</a>
+            <a href="/#">Wallpapers</a>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes />
             </button>

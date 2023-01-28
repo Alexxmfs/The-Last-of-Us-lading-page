@@ -17,7 +17,7 @@ body {
 :root{
     --mainColor: #414F4F;
     --mainColorLight: #5767aa;
-    --secondaryColor: #DB2B39;
+    --secondaryColor: #FFF;
     --textColor: #eee;
 }
 
@@ -36,9 +36,11 @@ header {
 }
 
 nav a {
+    position: relative;
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
+    align-items: center;
 }
 
 nav a:hover {
@@ -92,4 +94,20 @@ header .nav-btn {
     nav a {
         font-size: 1.5rem;
     }
+}
+
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #7693AD;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+    width: 100%;
 }
