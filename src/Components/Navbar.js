@@ -15,26 +15,32 @@ const Navbar = () => {
 
     return (
     <header>
-        {/* <h3>Logo</h3> */}
-        <div className="logo">
-        <img src={Logo} />
-        </div>
+
+      <div className="logo">
+          <img src={Logo} />
+      </div>
+
         <nav ref={navRef}>
             <a className="Navbar" href="/#">Home</a>
             <a className="Navbar" href="/#">Personagens</a>
             <a className="Navbar" href="/#">Wallpapers</a>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                <FaTimes />
-            </button>
+              <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                  <FaTimes />
+              </button>
         </nav>
+
         <button className="nav-btn" onClick={showNavbar}>
                 <FaBars />
-            </button>
+        </button>
+
       <nav className="nav-network">
+        <div className="social-icon">
           <a className="icons"><img src={iconGitHub} /></a>
           <a className="icons"><img src={iconInsta} /></a>
           <a className="icons"><img src={iconLinkedin} /></a>
+        </div>
       </nav>
+      
     </header>
   );
 };

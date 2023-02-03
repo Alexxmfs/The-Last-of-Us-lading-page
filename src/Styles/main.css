@@ -33,7 +33,7 @@ header {
 
 .logo {
     padding-top: 130px;
-    padding-right: 280px;
+    padding-right: 290px;
 }
 
 nav .Navbar {
@@ -97,7 +97,6 @@ header .nav-btn {
     }
 }
 
-
 .Navbar:after {
     content: "";
     position: absolute;
@@ -113,8 +112,6 @@ header .nav-btn {
     width: 100%;
 }
 
-
-
 .nav-network {
     flex-direction: column;
     margin: 10px 0 0 0;  
@@ -123,7 +120,50 @@ header .nav-btn {
 
 .icons {
     flex-direction: column;
-    margin: 0 0 0 0;  
+    margin: 0 0 10 0;  
     padding: 5px;
 }
 
+.social-icon {
+    display: inline-block;
+    margin-left: 20px;
+    margin: 0 0 0 0;
+}
+
+.social-icon a {
+    width: 48px;
+    height: 48px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon a::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+
+.social-icon a img {
+	width: 80%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
