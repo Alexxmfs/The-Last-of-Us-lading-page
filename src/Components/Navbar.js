@@ -35,9 +35,9 @@ const Navbar = () => {
 
       <nav className="nav-network">
         <div className="social-icon">
-          <a className="icons"><img src={iconGitHub} /></a>
-          <a className="icons"><img src={iconInsta} /></a>
-          <a className="icons"><img src={iconLinkedin} /></a>
+          <a className="icons" href="https://github.com/Alexxmfs" target="_blank"><img src={iconGitHub} /></a>
+          <a className="icons" href="https://www.instagram.com/alex.maceedo/" target="_blank"><img src={iconInsta} /></a>
+          <a className="icons" href="https://www.linkedin.com/in/alex-macedo-freitas/" target="_blank"><img src={iconLinkedin} /></a>
         </div>
       </nav>
       
